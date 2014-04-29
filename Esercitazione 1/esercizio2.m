@@ -2,8 +2,10 @@
 
 dimensioniMatrice = [200, 800, 3200, 4000, 4800];
 
-t_riga = zeros(length(dimensioniMatrice));
-t_col = zeros(length(dimensioniMatrice));
+% [200, 800, 3200, 4000, 4800];
+
+t_riga = zeros(size(dimensioniMatrice));
+t_col = zeros(size(dimensioniMatrice));
 
 i = 1;
 for n = dimensioniMatrice
@@ -17,7 +19,10 @@ for n = dimensioniMatrice
 	tic
 	C = A(:,1).*B(:,1);
 	t_col(i) = toc;
-	i++;	
+	i++;
 end
 
-% plot(n, t_col./t_riga);
+plot(dimensioniMatrice, t_col./t_riga);
+
+xlabel('Dimensione matrice');
+ylabel('Rapporto tra tempi di calcolo');
