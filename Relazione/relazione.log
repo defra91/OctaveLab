@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  29 APR 2014 14:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.18)  29 APR 2014 17:04
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **relazione.tex
 (./relazione.tex
@@ -466,27 +467,44 @@ File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
 Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/ttlkeys.def
 File: ttlkeys.def 2011/12/15
 ) (./relazione.aux)
 \openout1 = `relazione.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 96.
+Package hyperref Info: Link coloring OFF on input line 102.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -495,9 +513,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count111
 )
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
 
 (./relazione.out) (./relazione.out)
 \@outlinefile=\write3
@@ -507,22 +525,43 @@ LaTeX Info: Redefining \nameref on input line 96.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
-\scratchdimen=\dimen116
+\scratchdimen=\dimen118
 \scratchbox=\box30
 \nofMPsegments=\count113
 \nofMParguments=\count114
 \everyMPshowfont=\toks19
 \MPscratchCnt=\count115
-\MPscratchDim=\dimen117
+\MPscratchDim=\dimen119
 \MPnumerator=\count116
 \makeMPintoPDFobject=\count117
 \everyMPtoPDFconversion=\toks20
 )
 \c@lstlisting=\count118
-\drop=\skip77
- [1
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./relazione.toc)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\drop=\skip77
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./relazione.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+)
 \tf@toc=\write4
 \openout4 = `relazione.toc'.
 
@@ -530,88 +569,122 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105 \clearpage
-                 [1] (./esercitazione2.tex [2
-
-]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 28.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 28.
- [3]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 76.
-
-[4] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/08/26 1.5b listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 84.
-
-(../Esercitazione2/ESE_CN_Inf_eq_2grado.m
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
+l.111 \clearpage
+                 [1] (./esercitazione1.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 6.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+<images/implementazioni_prodotto_di_matrici.jpg, id=83, 778.40813pt x 553.31718
+pt>
+File: images/implementazioni_prodotto_di_matrici.jpg Graphic file (type jpg)
+ <use images/implementazioni_prodotto_di_matrici.jpg>
+Package pdftex.def Info: images/implementazioni_prodotto_di_matrici.jpg used on
+ input line 28.
+(pdftex.def)             Requested size: 369.88582pt x 262.9297pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 28--29
+ [][] 
+ []
+
+) (./esercitazione2.tex [2
+
+] [3 <./images/implementazioni_prodotto_di_matrici.jpg>] [4] [5]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 76.
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 6.
-
-Overfull \hbox (39.0039pt too wide) in paragraph at lines 7--8
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 8--9
-[][][][][][][][][][][][][][][][][][][][] 
- []
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 84.
+LaTeX Font Info:    Try loading font information for OT1+georgia on input line 
+84.
+LaTeX Font Info:    No file OT1georgia.fd. on input line 84.
 
 
-Overfull \hbox (345.00693pt too wide) in paragraph at lines 9--10
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
+LaTeX Font Warning: Font shape `OT1/georgia/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 84.
+
+(../Esercitazione2/equazioniSecondoGrado.m
+
+LaTeX Font Warning: Font shape `OT1/georgia/bx/n' undefined
+(Font)              using `OT1/georgia/m/n' instead on input line 1.
 
 
-Overfull \hbox (519.00879pt too wide) in paragraph at lines 10--11
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][] 
- []
+LaTeX Font Warning: Font shape `OT1/georgia/m/it' undefined
+(Font)              using `OT1/georgia/m/n' instead on input line 4.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+georgia on input line 
+6.
+LaTeX Font Info:    No file OMSgeorgia.fd. on input line 6.
+
+LaTeX Font Warning: Font shape `OMS/georgia/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 6.
+
+LaTeX Font Info:    Try loading font information for OML+georgia on input line 
+6.
+LaTeX Font Info:    No file OMLgeorgia.fd. on input line 6.
+
+LaTeX Font Warning: Font shape `OML/georgia/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textgreater' on input line 6.
+
+[6]) (../Esercitazione2/SuccessionePigreco.m [7])
+(../Esercitazione2/SuccessioniAvantiIndietro.m
+
+LaTeX Font Warning: Font shape `OML/georgia/m/it' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textgreater' on input line 14.
+
+))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+ (./relazione.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package rerunfilecheck Info: File `relazione.out' has not changed.
+(rerunfilecheck)             Checksum: 9239BF9141E5FB0085861CA890BBB907;1144.
 
 
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 11--12
-[][][][][][][][][][][][][][][][][][][] 
- []
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-)
-
-! Package Listings Error: File `/../Esercitazione2/ESE_CN_Inf_succ_pigreco(.m)'
- not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: m)
-
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.96 .../Esercitazione2/ESE_CN_Inf_succ_pigreco.m}
-                                                  ^^M
-*** (cannot \read from terminal in nonstop modes)
-
- 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+ ) 
 Here is how much of TeX's memory you used:
- 8455 strings out of 493304
- 117737 string characters out of 6139871
- 246974 words of memory out of 5000000
- 11849 multiletter control sequences out of 15000+600000
- 5803 words of font info for 21 fonts, out of 8000000 for 9000
+ 8924 strings out of 493304
+ 124492 string characters out of 6139871
+ 341868 words of memory out of 5000000
+ 12189 multiletter control sequences out of 15000+600000
+ 7280 words of font info for 26 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 31i,5n,43p,886b,1832s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 34i,6n,50p,886b,2517s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on relazione.pdf (9 pages, 247670 bytes).
+PDF statistics:
+ 268 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+

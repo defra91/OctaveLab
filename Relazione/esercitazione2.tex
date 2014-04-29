@@ -81,7 +81,7 @@ Ripetere poi lo stesso tipo di indagine su una formula alternativa, stabile, che
 	$c = a * x_1 * x_2$.
 \end{center}
 
-\lstinputlisting[language=Matlab]{../Esercitazione2/ESE_CN_Inf_eq_2grado.m}
+\lstinputlisting[style=customat, caption=Equazioni di secondo grado]{../Esercitazione2/equazioniSecondoGrado.m}
 
 \subsubsection{Approssimazione del pigrego}
 
@@ -91,9 +91,12 @@ Ripetere poi lo stesso tipo di indagine su una formula alternativa, stabile, che
 	\item $s(2)=1+1/4;$ \\ $s(n+1)=s(n)+1/((n+1)^2);$ \\ $y(n+1)= sqrt(6*s(n+1));$
 	\item $w(2)=2;$ \\ $w(n+1)=2^(n-1/2)*sqrt(1-sqrt(1-4^(1-n)*w(n)^2));$
 	\item $z(2)=2;$ \\ $z(n+1)=(sqrt(2)*z(n))/(sqrt(1+sqrt(1-4^(1-n)*z(n)^2)));$
+	\linebreak[4]
+	\linebreak[4]
 \end{enumerate}
 
-\lstinputlisting[language=Matlab]{/../Esercitazione2/ESE_CN_Inf_succ_pigreco.m}
+
+\lstinputlisting[style=customat, caption=Approssimazione del pigreco]{../Esercitazione2/SuccessionePigreco.m}
 
 \subsubsection{Successioni calcolabili praticamente}
 
@@ -107,4 +110,4 @@ Si consideri la seguente successione:
 
 Essa converge (in aritmetica con infinite cifre) a zero per n->inf. Implementarla e verificare cosa accade nel calcolatore, cercando di giustificare i risultati. Inoltre, sapendo che y(n) è circa =0 per n sufficientemente grande, provare ad implementarla all'indietro e vedere cosa risulta per y(0). Perchè?
 
-\lstinputlisting[language=Matlab]{../Esercitazione2/ESE_CN_Inf_succ_avanti_indietro.m}
+\lstinputlisting[style=customat, caption=Successioni calcolabili]{../Esercitazione2/SuccessioniAvantiIndietro.m}

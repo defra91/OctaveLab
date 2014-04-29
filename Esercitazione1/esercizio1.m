@@ -1,8 +1,10 @@
 % Costruire un programma in linguaggio Matlab/Octave che esegua il calcolo del prodotto di due  matrici A e B di dimensione n x n, utilizzando la singola istruzione C = A*B, per i valori di n presi tra 10 e 2350 con passo=10,  calcoli il tempo di esecuzione di ogni prodotto e faccia il grafico "(n, tempo)". Commentare l'andamento del grafico.
 
-dimensioniMatrice = 10:10:1000;		% Dichiaro un vettore contenente tutte le dimensioni delle matrici. Si parte da 10 e si arriva a 2350 con passo 10
+dimensioniMatrice = 10:10:2350;		% Dichiaro un vettore contenente tutte le dimensioni delle matrici. Si parte da 10 e si arriva a 2350 con passo 10
 
 tempi = zeros(length(dimensioniMatrice));	% dichiaro un vettore di tempi grande tanto quanto la dimensione del vettore dimensioniMatrice
+
+tempi
 
 i = 1;						% Inizializzo il contatore per l'array dei tempi
 
