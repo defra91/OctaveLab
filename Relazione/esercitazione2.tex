@@ -13,25 +13,25 @@ Per applicazioni del calcolo scientifico vengono tipicamente utilizzate assieme 
 
 L’ambiente di calcolo, che si presenta con una linea di comando, mantiene disponibili in memoria tutte le variabili che sono state inizializzate dal momento dell'ingresso nell’ambiente, sia tramite singoli comandi che tramite istruzioni contenute nei programmi eseguiti, entrambi impartiti dalla linea di comando dell'ambiente. Questa è una sostanziale differenza rispetto alla programmazione in C o in FORTRAN, dove le variabili vengono allocate all’inizio dell’esecuzione del programma e poi de-allocate (cioè cancellate) al termine dell’esecuzione stessa. Una conseguenza immediata di questo fatto è che, ad esempio, in un ambiente come il Matlab non è necessario salvare esplicitamente su file i valori delle variabili che si vogliono osservare (es. graficare) dopo l’esecuzione del programma.
 
-% TODO file da eseguire
 
 \subsubsection{La grafica}
 
 Non è sufficiente produrre dei (buoni) risultati numerici, bensì è anche necessario poterli osservare a valutare in modo adeguato. Solitamente questa operazione richiede la produzione di qualche tipo di grafico, per cui l’esistenza di capacità grafiche è un elemento fondamentale di un ambiente software dedicato al calcolo scientifico. Matlab possiede capacità grafiche evolute ed Octave si appoggia a Gnuplot (applicativo anch’esso open-source).
 
-
-% TODO file da eseguire
-
 \subsubsection{L’esecuzione dei programmi}
 
 Per mandare in esecuzione un programma scritto per Matlab o per Octave (e quindi un file di testo con il suffisso ``.m'' contenente istruzioni che rispettano la sintassi del linguaggio di Matlab, ovvero un ``m-file'') è sufficiente scrivere il nome del m-file sulla riga di comando e premere il tasto invio. Se il programma non è nella directory corrente, è necessario prima mettersi nella directory che lo contiene.
-Il calcolo dei tempi di esecuzione è semplice, e quindi è possibile misurare la velocità di esecuzione dell’algoritmo numerico: conoscendo il numero di operazioni floating-point (flops) richieste per il calcolo della soluzione, si può calcolare la velocità $MFLOPS = numero_di_flops / tempo_trascorso$.
+Il calcolo dei tempi di esecuzione è semplice, e quindi è possibile misurare la velocità di esecuzione dell’algoritmo numerico: conoscendo il numero di operazioni floating-point (flops) richieste per il calcolo della soluzione, si può calcolare la velocità:
+
+\begin{center} 
+
+$MFLOPS = numeroDiLops / tempoTrascorso$.
+
+\end{center}
 
 Notare che il tempo di esecuzione di un algoritmo numerico è oggi il principale parametro per misurarne l'efficienza. Infatti, mentre fino a qualche anno fa le operazioni in virgola mobile venivano fatte via software/firmware, e dunque una moltiplicazione costava più di un'addizione, ora sono implementate via hardware, e dunque richiedono sostanzialmente lo stesso numero di cicli di clock del processore. Pertanto, mentre fino a qualche tempo fa il parametro più usato era il numero di operazioni floating-point richieste, ora lo è il tempo di esecuzione dove, attenzione, pesano anche gli aspetti non numerici dell'algoritmo (esistenza di istruzioni di scelta, movimento dei dati da e verso la memoria, ...).
 
 Per quanto riguarda l'ambiente di calcolo, è necessario tenere presente che Matlab (ed Octave) eseguono il programma utente in maniera interpretata, e cioè viene letta, compilata ed eseguita un’istruzione alla volta. Questo incide moltissimo sulla velocità di esecuzione di un algoritmo. In particolar modo è bene evitare di creare troppi cicli innestati.
-
-% TODO file da includere
 
 \subsubsection{Il linguaggio di programmazione ``domain specific''}
 
@@ -39,7 +39,6 @@ L’ambiente Matlab (Octave) mette a disposizione un linguaggio di programmazion
 
 Il linguaggio di Matlab (Octave) offre il vantaggio, rispetto ai linguaggi di programmazione tradizionali, di semplificare molto l’uso del linguaggio per la costruzione di un programma, lasciando quindi l’attenzione del programmatore libera il più possibile dagli aspetti puramente informatici e concentrata sugli aspetti algoritmici e numerici. Anche per questo è molto diffuso, sia come strumento di studio che come strumento di lavoro, in particolare per la prototipazione dei codici di calcolo. Per un utilizzo in ``produzione'', i compilatori dei linguaggi tradizionali sono però preferibili perchè permettono di ottimizzare maggiormente il codice eseguito dalla macchina e dunque, generalmente, l’algoritmo implementato viene eseguito più velocemente (che, nella realtà delle applicazioni, è molto rilevante).
 
-% TODO file da includere
 
 \subsection{Rappresentazione dei numeri al calcolatore}
 
@@ -49,11 +48,11 @@ Nello standard IEEE la precisione singola occupa una parola da 32 bit, mentre la
 
 \begin{center}
 	\textbf{S E F}
-\end{center}
+	\\
+	$X  =  (-1)^S  *  2^(E-bias)  *  (1.F)$
+	\end{center}
 
-$X  =  (-1)^S  *  2^(E-bias)  *  (1.F)$
-
-dove bias = 127 (single) o 1023 (double)
+dove bias = 127 (single) o 1023 (double).
 
 Lo standard richiede che il risultato delle operazioni di addizione, sottrazione, moltiplicazione e divisione sia arrotondato esattamente, cioè il risultato deve essere calcolato esattamente e poi arrotondato al numero in virgola mobile più vicino.
 
@@ -65,6 +64,7 @@ Ogni calcolatore ha a disposizione un numero finito M di cifre per rappresentare
 In generale, la somma, la divisione e la moltiplicazione producono un errore relativo piccolo, mentre la sottrazione può anche produrre un errore relativo grande, rispetto al risultato (ciò avviene quando i due operandi sono molto vicini tra di loro e si ha dunque una notevole perdita di cifre significative nel risultato).
 
 Il fatto che l’errore relativo nel risultato sia piccolo non è comunque una garanzia di accuratezza  in generale: la somma tra due operandi troppo distanti in magnitudo può addirittura far scomparire dal risultato il più piccolo dei due ed avere comunque un errore relativo piccolo. Per questo motivo, ad esempio,  quando si deve eseguire una sommatoria, è buona regola eseguirla mettendo gli operandi in ordine crescente, in modo che la somma parziale ed il prossimo numero da sommare siano il più vicini possibile in magnitudo.
+
 Vediamo di seguito alcuni esempi relativi a questi fenomeni:
 
 \subsubsection{Calcolo delle radici di un’equazione di secondo grado}
@@ -75,30 +75,36 @@ Data: $a*x^2 + b*x +c$ , calcolare le sue radici.
 
 La formula classica, $x = (- b \pm sqrt(b^2 – 4*a*c))/(2*a)$ , è potenzialmente instabile a causa della sottrazione tra b/2 e sqrt(...) . Provare ad implementarla e verificarne la perdita di accuratezza per opportune scelte dei coefficienti a, b, e c.
 
-Ripetere poi lo stesso tipo di indagine su una formula alternativa, stabile, che si ottiene calcolando prima la radice positiva ( in cui non si effettua la sottrazione) e poi calcolando l’altra sapendo che vale :  $c = a * x_1 * x_2$.
+Ripetere poi lo stesso tipo di indagine su una formula alternativa, stabile, che si ottiene calcolando prima la radice positiva ( in cui non si effettua la sottrazione) e poi calcolando l’altra sapendo che vale :  
 
-% TODO includere esercizio
+\begin{center}
+	$c = a * x_1 * x_2$.
+\end{center}
+
+\lstinputlisting[language=Matlab]{../Esercitazione2/ESE_CN_Inf_eq_2grado.m}
 
 \subsubsection{Approssimazione del pigrego}
 
 È un altro esempio di sottrazione pericolosa, questa volta in un metodo numerico iterativo per l’approssimazione di pi-greco. Provare ad implementare i seguenti tre metodi iterativi ed a graficarne l’errore relativo, in scala logaritmica, per le prime 100 iterate (un valore molto accurato di pi-greco in Matlab/Octave è contenuto nella variabile di sistema “pi”). Per n = 2,3,4,.... calcolare le tre approssimazioni di pi-greco, y(n), w(n) e z(n):
 
 \begin{enumerate}
-	\item $s(2)=1+1/4;	s(n+1)=s(n)+1/((n+1)^2);	y(n+1)= sqrt(6*s(n+1));$
-	\item $w(2)=2;	w(n+1)=2^(n-1/2)*sqrt(1-sqrt(1-4^(1-n)*w(n)^2));$
-	\item $z(2)=2;	z(n+1)=(sqrt(2)*z(n))/(sqrt(1+sqrt(1-4^(1-n)*z(n)^2)));$
+	\item $s(2)=1+1/4;$ \\ $s(n+1)=s(n)+1/((n+1)^2);$ \\ $y(n+1)= sqrt(6*s(n+1));$
+	\item $w(2)=2;$ \\ $w(n+1)=2^(n-1/2)*sqrt(1-sqrt(1-4^(1-n)*w(n)^2));$
+	\item $z(2)=2;$ \\ $z(n+1)=(sqrt(2)*z(n))/(sqrt(1+sqrt(1-4^(1-n)*z(n)^2)));$
 \end{enumerate}
 
-% TODO includere esempio
+\lstinputlisting[language=Matlab]{/../Esercitazione2/ESE_CN_Inf_succ_pigreco.m}
 
 \subsubsection{Successioni calcolabili praticamente}
 
 Si consideri la seguente successione:
 
 \begin{center}
-	$y(0)=1/e*(e-1);		y(n+1)=1-(n+1)*y(n);$
+	$y(0)=1/e*(e-1);$
+	\\
+	$y(n+1)=1-(n+1)*y(n);$
 \end{center}
 
 Essa converge (in aritmetica con infinite cifre) a zero per n->inf. Implementarla e verificare cosa accade nel calcolatore, cercando di giustificare i risultati. Inoltre, sapendo che y(n) è circa =0 per n sufficientemente grande, provare ad implementarla all'indietro e vedere cosa risulta per y(0). Perchè?
 
-% TODO includere esercizio
+\lstinputlisting[language=Matlab]{../Esercitazione2/ESE_CN_Inf_succ_avanti_indietro.m}
