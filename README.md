@@ -9,4 +9,6 @@ Stato del progetto:
 
 Data       | Stato |
 | ------------- |:-------------:|
+| 29/04/2014 | Ultimato esercizio2 della prima esercitazione |
 | 28/04/2014| Iniziata esercitazione 1 |
+
