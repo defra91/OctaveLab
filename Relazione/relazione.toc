@@ -1,13 +1,19 @@
 \contentsline {section}{\numberline {1}Esercitazione 1}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Librerie di base per il calcolo seriale in Algebra Lineare Numerica (BLAS)}{2}{subsection.1.1}
-\contentsline {section}{\numberline {2}Esercitazione 2}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Ambienti software dedicati al calcolo scientifico}{3}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Il workspace}{4}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}La grafica}{4}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}L\IeC {\textquoteright }esecuzione dei programmi}{4}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Il linguaggio di programmazione ``domain specific''}{5}{subsubsection.2.1.4}
-\contentsline {subsection}{\numberline {2.2}Rappresentazione dei numeri al calcolatore}{5}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Propagazione degli errori di arrotondamento}{6}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Calcolo delle radici di un\IeC {\textquoteright }equazione di secondo grado}{6}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Approssimazione del pigrego}{7}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Successioni calcolabili praticamente}{8}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {1.2}Calcolo delle prestazioni ottenibili dalle BLAS}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Ottimizzazione empirica automatizzata della libreria software BLAS: il progetto ATLAS}{5}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Esercizi}{6}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Esercizio 1}{6}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Esercizio 2}{7}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Esercizio 3}{7}{subsubsection.1.4.3}
+\contentsline {section}{\numberline {2}Esercitazione 2}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}Ambienti software dedicati al calcolo scientifico}{9}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Il workspace}{9}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}La grafica}{9}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}L\IeC {\textquoteright }esecuzione dei programmi}{9}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Il linguaggio di programmazione ``domain specific''}{10}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}Rappresentazione dei numeri al calcolatore}{10}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Propagazione degli errori di arrotondamento}{11}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Calcolo delle radici di un\IeC {\textquoteright }equazione di secondo grado}{11}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Approssimazione del pigrego}{12}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Successioni calcolabili praticamente}{13}{subsubsection.2.3.3}
