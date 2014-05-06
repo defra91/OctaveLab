@@ -84,17 +84,22 @@ Il suo successo è notevole, dato che riesce ad ottenere ottimizzazioni delle li
 Provandolo su un PC e confrontandone le prestazioni con le BLAS ``generali'' scaricate da www.netlib.org/blas si può notare che che la versione ``atlas'' delle BLAS è decine di volte più veloce delle BLAS ``generali'', già per una moltiplicazione di matrici di dimensione 1000.
 Questo dimostra come le prestazioni di calcolo possono essere ottenute solo sfruttando in maniera sapiente le risorse hardware a disposizione, che possono variare considerevolmente anche solo restando nel mondo del PC (es. un parametro fondamentale è la dimensione della memoria cache).
 
-\subsection{Esercizi}
-
-\subsubsection{Esercizio 1}
+\subsection{Esercizio 1}
 
  Costruire un programma in linguaggio Matlab/Octave che esegua il calcolo del prodotto di due  matrici A e B di dimensione n x n, utilizzando la singola istruzione $C = A*B$, per i valori di n presi tra 10 e 2350 con passo=10,  calcoli il tempo di esecuzione di ogni prodotto e faccia il grafico ``$(n, tempo)$''. Commentare l'andamento del grafico.
 
 NOTA: \textit{il tempo di esecuzione, su un PC con processore a 1.8GHz, risulta essere pari a 23 sec per l'ultima moltiplicazione (n=2350) e pari a 22 minuti per il programma complessivo; si consiglia di fare alcune prove con valori di ``n'' bassi ed eventualmente fermarsi ad n < 2350.}
 
-\lstinputlisting[style=customat, caption=Esercizio 1]{../Esercitazione1/esercizio1.m}
+\lstinputlisting[style=customat, caption=Prodotto di due matrici con singola istruzione]{../Esercitazione1/esercizio1.m}
 
-\subsubsection{Esercizio 2}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=130mm]{../Esercitazione1/images/esercizio1.jpg}
+\caption{Grafico esercizio 1, dimensione matrice in funzione del tempo}
+\label{overflow}
+\end{figure}
+
+\subsection{Esercizio 2}
 
 Costruire un programma in linguaggio Matlab/Octave che, date due matrici A e B di dimensione $n x n$, nei casi $n = 200, 800, 3200, 4000, 4800$, calcoli il prodotto ``per componenti'' della prima riga di A e di B utilizzando una sola istruzione, ne calcoli il tempo di esecuzione $t_riga$, e poi faccia lo stesso con la prima colonna. 
 
@@ -102,9 +107,9 @@ Il programma deve poi creare un grafico ``$(n, t_col / t_riga)$''.  Spiegare con
 
 NOTA: \textit{il tempo di esecuzione, per n>=4000 potrebbe diventare sostanzialmente lungo: fare attenzione e, a quel punto, fermarsi}.
 
-\lstinputlisting[style=customat, caption=Esercizio 1]{../Esercitazione1/esercizio2.m}
+\lstinputlisting[style=customat, caption=Prodotto di due matrici per componenti]{../Esercitazione1/esercizio2.m}
 
-\subsubsection{Esercizio 3}
+\subsection{Esercizio 3}
 
 Costruire un programma in linguaggio Matlab/Octave che esegua il calcolo del prodotto di due  matrici A e B di dimensione n x n e calcoli i singoli tempi di esecuzione, utilizzando:
 
@@ -121,4 +126,4 @@ Provare il programma per un valore di n più elevato possibile e che sia una pot
 
 Spiegare in qualche riga di commento le differenze nei tempi di esecuzione.
 
-\lstinputlisting[style=customat, caption=Esercizio 1]{../Esercitazione1/esercizio3.m}
+\lstinputlisting[style=customat, caption=Prodotto di matrici con 4 algoritmi]{../Esercitazione1/esercizio3.m}

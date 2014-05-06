@@ -8,7 +8,9 @@ Registro delle modifiche:
 ------------------
 
 Data         | Stato |
-| -----------|:-------------:|
+| -----------| -------------|
+| 06/04/2014 | Aggiornato layout della relazione |
+| 06/04/2014 | Svolto esercizio 1 dell'esercitazione 3, iniziato esercizio 2 |
 | 05/04/2014 | Trascrizione testo esercitazione 3 |
 | 30/04/2014 | Aggiornato layout relazione |
 | 30/04/2014 | Aggiornata relazione |

@@ -1,8 +1,6 @@
-dimensioniMatrice = 10:10:2350;		% Dichiaro un vettore contenente tutte le dimensioni delle matrici. Si parte da 10 e si arriva a 2350 con passo 10
+dimensioniMatrice = 10:10:1000;		% Dichiaro un vettore contenente tutte le dimensioni delle matrici. Si parte da 10 e si arriva a 2350 con passo 10
 
 tempi = zeros(length(dimensioniMatrice));	% dichiaro un vettore di tempi grande tanto quanto la dimensione del vettore dimensioniMatrice
-
-tempi
 
 i = 1;						% Inizializzo il contatore per l'array dei tempi
 

@@ -12,6 +12,10 @@
 \usepackage[svgnames]{xcolor} % Required to specify font color
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
 
 \newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic publisher logo
 
@@ -77,6 +81,8 @@
   {€}{{\EUR}}1 {£}{{\pounds}}1
 }
 
+\definecolor{light-gray}{gray}{0.95}
+
 \lstdefinestyle{customat}{
   belowcaptionskip=1\baselineskip,
   breaklines=true,
@@ -87,7 +93,7 @@
   showstringspaces=false,
   basicstyle=\fontfamily{georgia}\selectfont\footnotesize\color{black},
   keywordstyle=\bfseries\color{green!40!black},
-  commentstyle= \color{blue},
+  commentstyle= \color{gray},
   identifierstyle=\color{blue},
   stringstyle=\color{orange},
   tabsize=2,
@@ -95,8 +101,25 @@
 }
 
 \renewcommand{\lstlistingname}{Listato}
+\renewcommand{\lstlistlistingname}{Elenco dei listati}
+\renewcommand{\listfigurename}{Elenco delle figure}
 
 \pagestyle{headings}
+
+\AtBeginDocument{%
+  \renewcommand{\thelstlisting}{%
+    \ifnum\value{subsection}=0
+      \thesection.\arabic{lstlisting}%
+    \else
+      \ifnum\value{subsubsection}=0
+        \thesection.\arabic{lstlisting}%
+      \else
+      \thesubsubsection%
+      \fi
+    \fi
+  }
+}
+
 %----------------------------------------------------------------------------------------
 %	BLANK DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -110,6 +133,10 @@
 \pagenumbering{arabic}
 
 \tableofcontents
+\clearpage
+
+\lstlistoflistings
+\listoffigures
 \clearpage
 
 \input{esercitazione1}

@@ -48,8 +48,8 @@ Nello standard IEEE la precisione singola occupa una parola da 32 bit, mentre la
 
 \begin{center}
 	\textbf{S E F}
-	\\
-	$X  =  (-1)^S  *  2^(E-bias)  *  (1.F)$
+
+	$X  =  (-1)^S  *  2^{(E-bias)}  *  (1.F)$
 	\end{center}
 
 dove bias = 127 (single) o 1023 (double).
@@ -67,7 +67,7 @@ Il fatto che l’errore relativo nel risultato sia piccolo non è comunque una g
 
 Vediamo di seguito alcuni esempi relativi a questi fenomeni:
 
-\subsubsection{Calcolo delle radici di un’equazione di secondo grado}
+\subsection{Esempio 1: Calcolo delle radici di un'equazione di secondo grado}
 
 Vediamo ora un esempio concreto di calcolo in cui introdurre una sottrazione potenzialmente pericolosa conduca effettivamente a problemi di instabilità della soluzione, e come rimediare.
 
@@ -75,7 +75,7 @@ Data: $a*x^2 + b*x +c$ , calcolare le sue radici.
 
 La formula classica, $x = (- b \pm sqrt(b^2 – 4*a*c))/(2*a)$ , è potenzialmente instabile a causa della sottrazione tra b/2 e sqrt(...) . Provare ad implementarla e verificarne la perdita di accuratezza per opportune scelte dei coefficienti a, b, e c.
 
-Ripetere poi lo stesso tipo di indagine su una formula alternativa, stabile, che si ottiene calcolando prima la radice positiva ( in cui non si effettua la sottrazione) e poi calcolando l’altra sapendo che vale :  
+Ripetere poi lo stesso tipo di indagine su una formula alternativa, stabile, che si ottiene calcolando prima la radice positiva ( in cui non si effettua la sottrazione) e poi calcolando l'altra sapendo che vale :  
 
 \begin{center}
 	$c = a * x_1 * x_2$.
@@ -83,9 +83,9 @@ Ripetere poi lo stesso tipo di indagine su una formula alternativa, stabile, che
 
 \lstinputlisting[style=customat, caption=Equazioni di secondo grado]{../Esercitazione2/equazioniSecondoGrado.m}
 
-\subsubsection{Approssimazione del pigrego}
+\subsection{Esempio 2: Approssimazione del pigrego}
 
-È un altro esempio di sottrazione pericolosa, questa volta in un metodo numerico iterativo per l’approssimazione di pi-greco. Provare ad implementare i seguenti tre metodi iterativi ed a graficarne l’errore relativo, in scala logaritmica, per le prime 100 iterate (un valore molto accurato di pi-greco in Matlab/Octave è contenuto nella variabile di sistema “pi”). Per n = 2,3,4,.... calcolare le tre approssimazioni di pi-greco, y(n), w(n) e z(n):
+È un altro esempio di sottrazione pericolosa, questa volta in un metodo numerico iterativo per l’approssimazione di pi-greco. Provare ad implementare i seguenti tre metodi iterativi ed a graficarne l’errore relativo, in scala logaritmica, per le prime 100 iterate (un valore molto accurato di pi-greco in Matlab/Octave è contenuto nella variabile di sistema ``pi''). Per n = 2,3,4,.... calcolare le tre approssimazioni di pi-greco, y(n), w(n) e z(n):
 
 \begin{enumerate}
 	\item $s(2)=1+1/4;$ \\ $s(n+1)=s(n)+1/((n+1)^2);$ \\ $y(n+1)= sqrt(6*s(n+1));$
@@ -98,7 +98,7 @@ Ripetere poi lo stesso tipo di indagine su una formula alternativa, stabile, che
 
 \lstinputlisting[style=customat, caption=Approssimazione del pigreco]{../Esercitazione2/SuccessionePigreco.m}
 
-\subsubsection{Successioni calcolabili praticamente}
+\subsection{Esempio 3: Successioni calcolabili praticamente}
 
 Si consideri la seguente successione:
 
